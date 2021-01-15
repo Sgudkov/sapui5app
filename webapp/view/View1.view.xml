@@ -1,0 +1,49 @@
+<mvc:View controllerName="Testapp4.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" height="100%">
+	<App>
+	<pages>
+	    <FlexBox width="100%" id="__box0">
+	    <items>
+	        <FlexBox width="100%" id="__box1" direction="Column" alignContent="Start" alignItems="Baseline">
+	            <items>
+	                <Panel id="__panel1" headerText="Заголовок документа" expanded="true">
+	                    <content>
+	                        <Input width="100%" id="inpdoc" description="Документ" placeholder="Введите номер документа" type="Number"/>
+	                        <Input width="100%" id="inppos" description="Позиция документа" placeholder="Введите номер позиции документа" type="Number"/>
+	                        <Toolbar width="100%" id="__toolbar2">
+	                        <content>
+	                            <Button text="Добавить" width="100px" id="__button3" press="onAddItems"/>
+	                        </content>
+	                        </Toolbar>
+	                    </content>
+	                </Panel>
+	            </items>
+	        </FlexBox>
+	        <FlexBox width="100%" id="__box2" alignItems="Baseline">
+	            <items>
+	                <Panel id="__panel0" headerText="Позиции документа" height="100%">
+	                <content>
+	                    <sap.ui.layout.form:SimpleForm editable="true" layout="ResponsiveGridLayout" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" id="__form0">
+	                        <sap.ui.layout.form:content>
+	                            <sap.ui.core:Title id="__title0" text="Дополнительные данные"/>
+	                            <Label text="Балансовая единица" id="__label0"/>
+	                            <Input width="100%" id="__input3"/>
+	                            <Label text="Тип документа закупки" id="__label1"/>
+	                            <Input width="100%" id="__input5"/>
+	                            <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Номер материала" id="__label1_copy"/>
+	                            <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="__input5_copy"/>
+	                            <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Завод" id="__label1_copy2"/>
+	                            <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="__input5_copy2"/>
+	                            <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Склад" id="__label1_copy3"/>
+	                            <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="__input5_copy3"/>
+	                            <Label xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Базовая единица измерения" id="__label1_copy4"/>
+	                            <Input xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="__input5_copy4"/></sap.ui.layout.form:content>
+	                    </sap.ui.layout.form:SimpleForm>
+	                </content>
+	                </Panel>
+	            </items>
+	        </FlexBox>
+	    </items>
+	    </FlexBox>
+	</pages>
+	</App>
+</mvc:View>
